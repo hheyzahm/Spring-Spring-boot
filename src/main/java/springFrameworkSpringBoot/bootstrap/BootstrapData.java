@@ -25,18 +25,17 @@ public class BootstrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // this function have sole purpose of saving data in database
-        saveData();
-        //this function have sole purpose of displaying data from database
-        displayData();
+        saveAndDisplayData();
+
     }
 
-    private void saveData() {
+    private void saveAndDisplayData() {
+        //saving data
         Author sirSyedAhmadKhan = new Author();
         sirSyedAhmadKhan.setFirstName("Sir Syed ");
         sirSyedAhmadKhan.setLastName("Ahmad Khan");
 
-        Author sirSyedAhmadKhanSave = authorRepository.save(sirSyedAhmadKhan);
+        Author sirSyedAhmadKhanSaved = authorRepository.save(sirSyedAhmadKhan);
 
         Book tefseerUlQuran = new Book();
         tefseerUlQuran.setTitle("TAFSEER - UL - QURAN");
@@ -69,6 +68,12 @@ public class BootstrapData implements CommandLineRunner {
         Book lecturSaved = bookRepository.save(lectur);
         Book tehzeebulAkhlaqSaved = bookRepository.save(tehzeebulAkhlaq);
 
+        sirSyedAhmadKhanSaved.getBooks().add(tefseerUlQuranSaved);
+        sirSyedAhmadKhanSaved.getBooks().add(aakiriMazameenSaved);
+        sirSyedAhmadKhanSaved.getBooks().add(khutbatEAhmadiyaSaved);
+        sirSyedAhmadKhanSaved.getBooks().add(khutootESirSyedSaved);
+        sirSyedAhmadKhanSaved.getBooks().add(lecturSaved);
+        sirSyedAhmadKhanSaved.getBooks().add(tehzeebulAkhlaqSaved);
         /*Allama Iqbal */
         Author allamaIqbal = new Author();
         allamaIqbal.setFirstName("Muhammad ");
@@ -112,19 +117,20 @@ public class BootstrapData implements CommandLineRunner {
         Book asrorORamoozSaved = bookRepository.save(asrorORamooz);
         Book khulliyatEIqbalSaved = bookRepository.save(khulliyatEIqbal);
 
+        allamaIqbalSaved.getBooks().add(bangEDaraSaved);
+        allamaIqbalSaved.getBooks().add(balEJibreelSaved);
+        allamaIqbalSaved.getBooks().add(zarbEKaleemSaved);
+        allamaIqbalSaved.getBooks().add(shikwaJawabEShiwkwaSaved);
+        allamaIqbalSaved.getBooks().add(asrarEKhudiSaved);
+        allamaIqbalSaved.getBooks().add(asrorORamoozSaved);
+        allamaIqbalSaved.getBooks().add(khulliyatEIqbalSaved);
+
+
+
+        //displaying data
+        System.out.println("In BootStrap");
+        System.out.println("Authors Count : "+authorRepository.count());
+        System.out.println("Books Count : "+bookRepository.count());
     }
 
-    private void saveAuthors() {
-
-    }
-
-    private void saveBooks() {
-
-
-    }
-
-
-    private void displayData() {
-
-    }
 }
