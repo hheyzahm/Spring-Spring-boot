@@ -1,7 +1,7 @@
-package springFrameworkSpringBoot.repositories;
+package springFrameworkSpringBoot.Chapter2.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import springFrameworkSpringBoot.domain.Author;
+import springFrameworkSpringBoot.Chapter2.domain.Author;
 
 public interface AuthorRepository extends CrudRepository<Author,Long> {
 }

@@ -1,9 +1,9 @@
-package springFrameworkSpringBoot.controller;
+package springFrameworkSpringBoot.Chapter2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import springFrameworkSpringBoot.services.AuthorService;
+import springFrameworkSpringBoot.Chapter2.services.AuthorService;
 
 /**
  * @Created 15 03 2023 - 12:36 PM

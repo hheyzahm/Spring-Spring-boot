@@ -1,6 +1,6 @@
-package springFrameworkSpringBoot.services;
+package springFrameworkSpringBoot.Chapter2.services;
 
-import springFrameworkSpringBoot.domain.Book;
+import springFrameworkSpringBoot.Chapter2.domain.Book;
 
 /**
  * @Created 15 03 2023 - 11:04 AM

@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.domain;
+package springFrameworkSpringBoot.Chapter2.domain;
 
 
 import jakarta.persistence.*;

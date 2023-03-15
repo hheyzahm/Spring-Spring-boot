@@ -1,8 +1,8 @@
-package springFrameworkSpringBoot.services;
+package springFrameworkSpringBoot.Chapter2.services;
 
 import org.springframework.stereotype.Service;
-import springFrameworkSpringBoot.domain.Book;
-import springFrameworkSpringBoot.repositories.BookRepository;
+import springFrameworkSpringBoot.Chapter2.domain.Book;
+import springFrameworkSpringBoot.Chapter2.repositories.BookRepository;
 
 /**
  * @Created 15 03 2023 - 11:06 AM

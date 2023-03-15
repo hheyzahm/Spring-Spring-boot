@@ -1,13 +1,13 @@
-package springFrameworkSpringBoot.bootstrap;
+package springFrameworkSpringBoot.Chapter2.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import springFrameworkSpringBoot.domain.Author;
-import springFrameworkSpringBoot.domain.Book;
-import springFrameworkSpringBoot.domain.Publisher;
-import springFrameworkSpringBoot.repositories.AuthorRepository;
-import springFrameworkSpringBoot.repositories.BookRepository;
-import springFrameworkSpringBoot.repositories.PublisherRepository;
+import springFrameworkSpringBoot.Chapter2.domain.Publisher;
+import springFrameworkSpringBoot.Chapter2.domain.Author;
+import springFrameworkSpringBoot.Chapter2.domain.Book;
+import springFrameworkSpringBoot.Chapter2.repositories.AuthorRepository;
+import springFrameworkSpringBoot.Chapter2.repositories.BookRepository;
+import springFrameworkSpringBoot.Chapter2.repositories.PublisherRepository;
 
 /**
  * @Created 14  03 2023 - 11:06 AM
