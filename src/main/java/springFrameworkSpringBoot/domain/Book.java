@@ -18,6 +18,18 @@ public class Book {
     @JoinTable(name = "author_book",joinColumns = @JoinColumn(name = "book_id")
     , inverseJoinColumns = @JoinColumn(name = "author_id"))
    private Set<Author> authors = new HashSet<>();
+
+    @ManyToOne
+    private Publisher publisher;
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
+
     public Long getBookID() {
         return bookID;
     }
@@ -66,10 +78,10 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "bookID=" + bookID +
-                ", title='" + title + '\'' +
+                "Book ID=" + bookID +
+                ", Title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
+                ", Authors=" + authors +
                 '}';
     }
 }

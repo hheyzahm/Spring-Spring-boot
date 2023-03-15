@@ -68,10 +68,10 @@ public class Author {
     @Override
     public String toString() {
         return "Author{" +
-                "authorID=" + authorID +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+                "Author ID=" + authorID +
+                ", First Name='" + firstName + '\'' +
+                ", Last Name='" + lastName + '\'' +
+                ", Books=" + books +
                 '}';
     }
 }
