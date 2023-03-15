@@ -12,7 +12,15 @@ import springFrameworkSpringBoot.Chapter3.services.GreetingService;
  */
 @Controller
 public class PropertyInjectionController {
-
+    /**
+     * one way of using @Qualifier
+     * @Qualifier("greetingServicePropertyInjected")
+     */
+    /**
+     * Second way of using @Qualifier
+     *    @Qualifier("greetingServiceProperty")
+     * */
+    @Qualifier("greetingServiceProperty")
     @Autowired
     GreetingService greetingService;
 
