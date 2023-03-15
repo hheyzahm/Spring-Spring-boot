@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyControllerTest {
 
     @Test
-    void sayHelloMyControllerTest() {
+    void sayHelloFromMyController() {
         MyController myController = new MyController();
 
         System.out.println(myController.sayHelloFromMyController());

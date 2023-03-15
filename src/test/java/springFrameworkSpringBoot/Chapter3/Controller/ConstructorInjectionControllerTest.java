@@ -11,13 +11,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ConstructorInjectionControllerTest {
 
-
+    @Autowired
     ConstructorInjectionController constructorInjectionController;
 
-    @BeforeEach
+/*    @BeforeEach
     void setUp() {
         constructorInjectionController = new ConstructorInjectionController(new GreetingServiceImpl());
-    }
+    }*/
 
     @Test
     void sayHelloFromConstructorController() {

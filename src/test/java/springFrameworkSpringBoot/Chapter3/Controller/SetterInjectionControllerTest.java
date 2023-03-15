@@ -11,13 +11,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class SetterInjectionControllerTest {
 
-
+    @Autowired
     SetterInjectionController setterInjectionController;
-    @BeforeEach
+  /*  @BeforeEach
     void setUp() {
         setterInjectionController=new SetterInjectionController();
         setterInjectionController.setGreetingService(new GreetingServiceImpl());
     }
+*/
     @Test
     void sayHelloFromSetterController() {
         System.out.println(setterInjectionController.sayHelloFromSetterController());

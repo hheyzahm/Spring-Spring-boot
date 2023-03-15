@@ -12,13 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class PropertyInjectionControllerTest {
 
 
-
+    @Autowired
     PropertyInjectionController propertyInjectionController;
-    @BeforeEach
+    /*@BeforeEach
     void setUp() {
         propertyInjectionController=new PropertyInjectionController();
         propertyInjectionController.greetingService=new GreetingServiceImpl();
     }
+*/
     @Test
     void sayHelloFromPropertyController() {
         System.out.println(propertyInjectionController.sayHelloFromPropertyController());

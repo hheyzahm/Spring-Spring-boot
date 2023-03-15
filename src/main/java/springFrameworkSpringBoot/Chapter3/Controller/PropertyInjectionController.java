@@ -10,9 +10,10 @@ import springFrameworkSpringBoot.Chapter3.services.GreetingService;
  * @Created 15 03 2023 - 4:26 PM
  * @Author Hazeem Hassan
  */
-
+@Controller
 public class PropertyInjectionController {
 
+    @Autowired
     GreetingService greetingService;
 
     public String sayHelloFromPropertyController(){
