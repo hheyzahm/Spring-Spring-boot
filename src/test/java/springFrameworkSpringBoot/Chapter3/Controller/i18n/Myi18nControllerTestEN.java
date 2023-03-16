@@ -9,7 +9,7 @@ import springFrameworkSpringBoot.Chapter3.Controller.i18N.Myi18nController;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("EN")
+//@ActiveProfiles("EN")
 @SpringBootTest
 class Myi18nControllerTestEN {
 

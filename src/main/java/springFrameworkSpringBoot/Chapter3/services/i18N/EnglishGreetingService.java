@@ -8,7 +8,7 @@ import springFrameworkSpringBoot.Chapter3.services.GreetingService;
  * @Created 15 03 2023 - 4:22 PM
  * @Author Hazeem Hassan
  */
-@Profile("EN")
+@Profile({"EN","default"})
 @Service("i18NService")
 public class EnglishGreetingService implements GreetingService {
 
