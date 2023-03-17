@@ -3,8 +3,8 @@ package springFrameworkSpringBoot.projectLombok.controllers;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import springFrameworkSpringBoot.projectLombok.Model.Beer;
-import springFrameworkSpringBoot.projectLombok.services.BeerService;
+import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
+import springFrameworkSpringBoot.projectLombok.services.BeerServicePL;
 
 import java.util.UUID;
 
@@ -15,11 +15,11 @@ import java.util.UUID;
 @Slf4j
 @AllArgsConstructor
 @Controller
-public class BeerController {
-    private final BeerService beerService;
+public class BeerControllerPL {
+    private final BeerServicePL beerServicePL;
 
-    public Beer getBeerByID(UUID uuid) {
+    public BeerPL getBeerByID(UUID uuid) {
         log.debug("Get Beer by Id - in Controller.  ");
-        return beerService.getBeerByID(uuid);
+        return beerServicePL.getBeerByID(uuid);
     }
 }

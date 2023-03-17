@@ -2,8 +2,8 @@ package springFrameworkSpringBoot.projectLombok.services;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import springFrameworkSpringBoot.projectLombok.Model.Beer;
-import springFrameworkSpringBoot.projectLombok.Model.BeerStyle;
+import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
+import springFrameworkSpringBoot.projectLombok.Model.BeerStylePL;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -16,15 +16,15 @@ import java.util.UUID;
 
 @Slf4j
 @Service
-public class BeerServiceImpl implements BeerService {
+public class BeerServicePLImpl implements BeerServicePL {
     @Override
-    public Beer getBeerByID(UUID uuidID) {
+    public BeerPL getBeerByID(UUID uuidID) {
         log.debug("Get Beer by Id - in service. Id: " + uuidID.toString());
-        return Beer.builder()
+        return BeerPL.builder()
                 .id(uuidID)
                 .version(1)
                 .beerName("Galaxy Cat")
-                .beerStyle(BeerStyle.PALE_ALE)
+                .beerStyle(BeerStylePL.PALE_ALE)
                 .upc("12356")
                 .price(new BigDecimal("12.99"))
                 .quantityOnHand(122)

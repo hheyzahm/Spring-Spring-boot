@@ -1,7 +1,7 @@
 package springFrameworkSpringBoot.projectLombok.services;
 
 
-import springFrameworkSpringBoot.projectLombok.Model.Beer;
+import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
 
 import java.util.UUID;
 
@@ -9,6 +9,6 @@ import java.util.UUID;
  * @Created 17 03 2023 - 5:00 PM
  * @Author Hazeem Hassan
  */
-public interface BeerService {
-    Beer getBeerByID(UUID uuidID);
+public interface BeerServicePL {
+    BeerPL getBeerByID(UUID uuidID);
 }

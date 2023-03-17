@@ -8,22 +8,22 @@ import java.util.UUID;
  * @Created 17 03 2023 - 4:54 PM
  * @Author Hazeem Hassan
  */
-public class Beer {
+public class BeerPL {
     private UUID id;
     private Integer version;
     private String beerName;
-    private BeerStyle beerStyle;
+    private BeerStylePL beerStylePL;
     private String upc;
     private Integer quantityOnHand;
     private BigDecimal price;
     private LocalDateTime createdDate;
     private LocalDateTime updateDate;
 
-    Beer(UUID id, Integer version, String beerName, BeerStyle beerStyle, String upc, Integer quantityOnHand, BigDecimal price, LocalDateTime createdDate, LocalDateTime updateDate) {
+    BeerPL(UUID id, Integer version, String beerName, BeerStylePL beerStylePL, String upc, Integer quantityOnHand, BigDecimal price, LocalDateTime createdDate, LocalDateTime updateDate) {
         this.id = id;
         this.version = version;
         this.beerName = beerName;
-        this.beerStyle = beerStyle;
+        this.beerStylePL = beerStylePL;
         this.upc = upc;
         this.quantityOnHand = quantityOnHand;
         this.price = price;
@@ -47,8 +47,8 @@ public class Beer {
         return this.beerName;
     }
 
-    public BeerStyle getBeerStyle() {
-        return this.beerStyle;
+    public BeerStylePL getBeerStyle() {
+        return this.beerStylePL;
     }
 
     public String getUpc() {
@@ -83,8 +83,8 @@ public class Beer {
         this.beerName = beerName;
     }
 
-    public void setBeerStyle(BeerStyle beerStyle) {
-        this.beerStyle = beerStyle;
+    public void setBeerStyle(BeerStylePL beerStylePL) {
+        this.beerStylePL = beerStylePL;
     }
 
     public void setUpc(String upc) {
@@ -109,8 +109,8 @@ public class Beer {
 
     public boolean equals(final Object o) {
         if (o == this) return true;
-        if (!(o instanceof Beer)) return false;
-        final Beer other = (Beer) o;
+        if (!(o instanceof BeerPL)) return false;
+        final BeerPL other = (BeerPL) o;
         if (!other.canEqual((Object) this)) return false;
         final Object this$id = this.getId();
         final Object other$id = other.getId();
@@ -146,7 +146,7 @@ public class Beer {
     }
 
     protected boolean canEqual(final Object other) {
-        return other instanceof Beer;
+        return other instanceof BeerPL;
     }
 
     public int hashCode() {
@@ -181,7 +181,7 @@ public class Beer {
         private UUID id;
         private Integer version;
         private String beerName;
-        private BeerStyle beerStyle;
+        private BeerStylePL beerStylePL;
         private String upc;
         private Integer quantityOnHand;
         private BigDecimal price;
@@ -206,8 +206,8 @@ public class Beer {
             return this;
         }
 
-        public BeerBuilder beerStyle(BeerStyle beerStyle) {
-            this.beerStyle = beerStyle;
+        public BeerBuilder beerStyle(BeerStylePL beerStylePL) {
+            this.beerStylePL = beerStylePL;
             return this;
         }
 
@@ -236,12 +236,12 @@ public class Beer {
             return this;
         }
 
-        public Beer build() {
-            return new Beer(id, version, beerName, beerStyle, upc, quantityOnHand, price, createdDate, updateDate);
+        public BeerPL build() {
+            return new BeerPL(id, version, beerName, beerStylePL, upc, quantityOnHand, price, createdDate, updateDate);
         }
 
         public String toString() {
-            return "Beer.BeerBuilder(id=" + this.id + ", version=" + this.version + ", beerName=" + this.beerName + ", beerStyle=" + this.beerStyle + ", upc=" + this.upc + ", quantityOnHand=" + this.quantityOnHand + ", price=" + this.price + ", createdDate=" + this.createdDate + ", updateDate=" + this.updateDate + ")";
+            return "Beer.BeerBuilder(id=" + this.id + ", version=" + this.version + ", beerName=" + this.beerName + ", beerStyle=" + this.beerStylePL + ", upc=" + this.upc + ", quantityOnHand=" + this.quantityOnHand + ", price=" + this.price + ", createdDate=" + this.createdDate + ", updateDate=" + this.updateDate + ")";
         }
     }
 }
