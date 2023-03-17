@@ -1,10 +1,10 @@
-package springFrameworkSpringBoot.projectLombok.controllers;
+package springFrameworkSpringBoot.S5projectLombok.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
-import springFrameworkSpringBoot.projectLombok.services.BeerServicePL;
+import springFrameworkSpringBoot.S5projectLombok.Model.BeerPL;
+import springFrameworkSpringBoot.S5projectLombok.services.BeerServicePL;
 
 import java.util.UUID;
 

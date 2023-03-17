@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.projectLombok.Model;
+package springFrameworkSpringBoot.S5projectLombok.Model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

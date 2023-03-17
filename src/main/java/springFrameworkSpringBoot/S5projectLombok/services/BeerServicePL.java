@@ -1,7 +1,7 @@
-package springFrameworkSpringBoot.projectLombok.services;
+package springFrameworkSpringBoot.S5projectLombok.services;
 
 
-import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
+import springFrameworkSpringBoot.S5projectLombok.Model.BeerPL;
 
 import java.util.UUID;
 

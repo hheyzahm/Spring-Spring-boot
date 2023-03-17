@@ -1,9 +1,9 @@
-package springFrameworkSpringBoot.projectLombok.services;
+package springFrameworkSpringBoot.S5projectLombok.services;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import springFrameworkSpringBoot.projectLombok.Model.BeerPL;
-import springFrameworkSpringBoot.projectLombok.Model.BeerStylePL;
+import springFrameworkSpringBoot.S5projectLombok.Model.BeerPL;
+import springFrameworkSpringBoot.S5projectLombok.Model.BeerStylePL;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
