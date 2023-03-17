@@ -8,22 +8,22 @@ import java.util.UUID;
  * @Created 17 03 2023 - 4:54 PM
  * @Author Hazeem Hassan
  */
-public class BeerMVC {
+public class BeerMockMVC {
     private UUID id;
     private Integer version;
     private String beerName;
-    private BeerStyleMVC beerStyleMVC;
+    private BeerStyleMockMVC beerStyleMockMVC;
     private String upc;
     private Integer quantityOnHand;
     private BigDecimal price;
     private LocalDateTime createdDate;
     private LocalDateTime updateDate;
 
-    BeerMVC(UUID id, Integer version, String beerName, BeerStyleMVC beerStyleMVC, String upc, Integer quantityOnHand, BigDecimal price, LocalDateTime createdDate, LocalDateTime updateDate) {
+    BeerMockMVC(UUID id, Integer version, String beerName, BeerStyleMockMVC beerStyleMockMVC, String upc, Integer quantityOnHand, BigDecimal price, LocalDateTime createdDate, LocalDateTime updateDate) {
         this.id = id;
         this.version = version;
         this.beerName = beerName;
-        this.beerStyleMVC = beerStyleMVC;
+        this.beerStyleMockMVC = beerStyleMockMVC;
         this.upc = upc;
         this.quantityOnHand = quantityOnHand;
         this.price = price;
@@ -47,8 +47,8 @@ public class BeerMVC {
         return this.beerName;
     }
 
-    public BeerStyleMVC getBeerStyle() {
-        return this.beerStyleMVC;
+    public BeerStyleMockMVC getBeerStyle() {
+        return this.beerStyleMockMVC;
     }
 
     public String getUpc() {
@@ -83,8 +83,8 @@ public class BeerMVC {
         this.beerName = beerName;
     }
 
-    public void setBeerStyle(BeerStyleMVC beerStyleMVC) {
-        this.beerStyleMVC = beerStyleMVC;
+    public void setBeerStyle(BeerStyleMockMVC beerStyleMockMVC) {
+        this.beerStyleMockMVC = beerStyleMockMVC;
     }
 
     public void setUpc(String upc) {
@@ -109,8 +109,8 @@ public class BeerMVC {
 
     public boolean equals(final Object o) {
         if (o == this) return true;
-        if (!(o instanceof BeerMVC)) return false;
-        final BeerMVC other = (BeerMVC) o;
+        if (!(o instanceof BeerMockMVC)) return false;
+        final BeerMockMVC other = (BeerMockMVC) o;
         if (!other.canEqual((Object) this)) return false;
         final Object this$id = this.getId();
         final Object other$id = other.getId();
@@ -146,7 +146,7 @@ public class BeerMVC {
     }
 
     protected boolean canEqual(final Object other) {
-        return other instanceof BeerMVC;
+        return other instanceof BeerMockMVC;
     }
 
     public int hashCode() {
@@ -181,7 +181,7 @@ public class BeerMVC {
         private UUID id;
         private Integer version;
         private String beerName;
-        private BeerStyleMVC beerStyleMVC;
+        private BeerStyleMockMVC beerStyleMockMVC;
         private String upc;
         private Integer quantityOnHand;
         private BigDecimal price;
@@ -206,8 +206,8 @@ public class BeerMVC {
             return this;
         }
 
-        public BeerBuilder beerStyle(BeerStyleMVC beerStyleMVC) {
-            this.beerStyleMVC = beerStyleMVC;
+        public BeerBuilder beerStyle(BeerStyleMockMVC beerStyleMockMVC) {
+            this.beerStyleMockMVC = beerStyleMockMVC;
             return this;
         }
 
@@ -236,12 +236,12 @@ public class BeerMVC {
             return this;
         }
 
-        public BeerMVC build() {
-            return new BeerMVC(id, version, beerName, beerStyleMVC, upc, quantityOnHand, price, createdDate, updateDate);
+        public BeerMockMVC build() {
+            return new BeerMockMVC(id, version, beerName, beerStyleMockMVC, upc, quantityOnHand, price, createdDate, updateDate);
         }
 
         public String toString() {
-            return "Beer.BeerBuilder(id=" + this.id + ", version=" + this.version + ", beerName=" + this.beerName + ", beerStyle=" + this.beerStyleMVC + ", upc=" + this.upc + ", quantityOnHand=" + this.quantityOnHand + ", price=" + this.price + ", createdDate=" + this.createdDate + ", updateDate=" + this.updateDate + ")";
+            return "Beer.BeerBuilder(id=" + this.id + ", version=" + this.version + ", beerName=" + this.beerName + ", beerStyle=" + this.beerStyleMockMVC + ", upc=" + this.upc + ", quantityOnHand=" + this.quantityOnHand + ", price=" + this.price + ", createdDate=" + this.createdDate + ", updateDate=" + this.updateDate + ")";
         }
     }
 }

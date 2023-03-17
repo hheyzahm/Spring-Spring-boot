@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.S7MockMVC.Model;
+package springFrameworkSpringBoot.S6SpringMVC.Model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.UUID;
  */
 @Data
 @Builder
-public class CustomerMVC {
+public class CustomerSpringMVC {
 
     private String name;
     private UUID id;

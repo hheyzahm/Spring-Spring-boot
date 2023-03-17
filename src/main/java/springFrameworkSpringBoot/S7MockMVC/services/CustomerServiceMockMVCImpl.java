@@ -1,7 +1,7 @@
 package springFrameworkSpringBoot.S7MockMVC.services;
 
 import org.springframework.stereotype.Service;
-import springFrameworkSpringBoot.S7MockMVC.Model.CustomerMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.CustomerMockMVC;
 
 import java.time.LocalDateTime;
 import java.util.*;
@@ -11,12 +11,12 @@ import java.util.*;
  * @Author Hazeem Hassan
  */
 @Service
-public class CustomerServiceMVCImpl implements CustomerServiceMVC {
+public class CustomerServiceMockMVCImpl implements CustomerServiceMockMVC {
 
-    private Map<UUID, CustomerMVC> customerMap;
+    private Map<UUID, CustomerMockMVC> customerMap;
 
-    public CustomerServiceMVCImpl() {
-        CustomerMVC customerMVC1 = CustomerMVC.builder()
+    public CustomerServiceMockMVCImpl() {
+        CustomerMockMVC customerMockMVC1 = CustomerMockMVC.builder()
                 .id(UUID.randomUUID())
                 .name("Customer 1")
                 .version(1)
@@ -24,7 +24,7 @@ public class CustomerServiceMVCImpl implements CustomerServiceMVC {
                 .updateDate(LocalDateTime.now())
                 .build();
 
-        CustomerMVC customerMVC2 = CustomerMVC.builder()
+        CustomerMockMVC customerMockMVC2 = CustomerMockMVC.builder()
                 .id(UUID.randomUUID())
                 .name("Customer 2")
                 .version(1)
@@ -32,7 +32,7 @@ public class CustomerServiceMVCImpl implements CustomerServiceMVC {
                 .updateDate(LocalDateTime.now())
                 .build();
 
-        CustomerMVC customerMVC3 = CustomerMVC.builder()
+        CustomerMockMVC customerMockMVC3 = CustomerMockMVC.builder()
                 .id(UUID.randomUUID())
                 .name("Customer 3")
                 .version(1)
@@ -41,9 +41,9 @@ public class CustomerServiceMVCImpl implements CustomerServiceMVC {
                 .build();
 
         customerMap = new HashMap<>();
-        customerMap.put(customerMVC1.getId(), customerMVC1);
-        customerMap.put(customerMVC2.getId(), customerMVC2);
-        customerMap.put(customerMVC3.getId(), customerMVC3);
+        customerMap.put(customerMockMVC1.getId(), customerMockMVC1);
+        customerMap.put(customerMockMVC2.getId(), customerMockMVC2);
+        customerMap.put(customerMockMVC3.getId(), customerMockMVC3);
     }
 
     @Override
@@ -52,34 +52,34 @@ public class CustomerServiceMVCImpl implements CustomerServiceMVC {
     }
 
     @Override
-    public void updateCustomerById(UUID customerId, CustomerMVC customerMVC) {
-        CustomerMVC existing = customerMap.get(customerId);
-        existing.setName(customerMVC.getName());
+    public void updateCustomerById(UUID customerId, CustomerMockMVC customerMockMVC) {
+        CustomerMockMVC existing = customerMap.get(customerId);
+        existing.setName(customerMockMVC.getName());
     }
 
     @Override
-    public CustomerMVC saveNewCustomer(CustomerMVC customerMVC) {
+    public CustomerMockMVC saveNewCustomer(CustomerMockMVC customerMockMVC) {
 
-        CustomerMVC savedCustomerMVC = CustomerMVC.builder()
+        CustomerMockMVC savedCustomerMockMVC = CustomerMockMVC.builder()
                 .id(UUID.randomUUID())
                 .version(1)
                 .updateDate(LocalDateTime.now())
                 .createdDate(LocalDateTime.now())
-                .name(customerMVC.getName())
+                .name(customerMockMVC.getName())
                 .build();
 
-        customerMap.put(savedCustomerMVC.getId(), savedCustomerMVC);
+        customerMap.put(savedCustomerMockMVC.getId(), savedCustomerMockMVC);
 
-        return savedCustomerMVC;
+        return savedCustomerMockMVC;
     }
 
     @Override
-    public CustomerMVC getCustomerById(UUID uuid) {
+    public CustomerMockMVC getCustomerById(UUID uuid) {
         return customerMap.get(uuid);
     }
 
     @Override
-    public List<CustomerMVC> getAllCustomers() {
+    public List<CustomerMockMVC> getAllCustomers() {
         return new ArrayList<>(customerMap.values());
     }
 }
