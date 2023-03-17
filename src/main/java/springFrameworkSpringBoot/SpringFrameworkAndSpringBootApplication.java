@@ -8,17 +8,15 @@ import springFrameworkSpringBoot.Chapter3.Controller.MyController;
 @SpringBootApplication
 public class SpringFrameworkAndSpringBootApplication {
 
-    /*
-    //Chapter 2
+    //Original
     public static void main(String[] args) {
         SpringApplication.run(SpringFrameworkAndSpringBootApplication.class, args);
     }
-*/
     //chapter 3
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(SpringFrameworkAndSpringBootApplication.class, args);
         MyController myController = ctx.getBean(MyController.class);
         System.out.println(myController.sayHelloFromMyController());
-    }
+    }*/
 
 }
