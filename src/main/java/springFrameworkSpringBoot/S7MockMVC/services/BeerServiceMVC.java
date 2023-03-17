@@ -1,8 +1,8 @@
-package springFrameworkSpringBoot.SpringMVC.services;
+package springFrameworkSpringBoot.S7MockMVC.services;
 
 
 
-import springFrameworkSpringBoot.SpringMVC.Model.BeerMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.BeerMVC;
 
 import java.util.List;
 import java.util.UUID;

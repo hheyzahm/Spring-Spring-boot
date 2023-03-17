@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.SpringMVC.controllers;
+package springFrameworkSpringBoot.S7MockMVC.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -6,9 +6,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springFrameworkSpringBoot.SpringMVC.Model.BeerMVC;
-import springFrameworkSpringBoot.SpringMVC.services.BeerServiceMVC;
-
+import springFrameworkSpringBoot.S7MockMVC.Model.BeerMVC;
+import springFrameworkSpringBoot.S7MockMVC.services.BeerServiceMVC;
 
 import java.util.List;
 import java.util.UUID;

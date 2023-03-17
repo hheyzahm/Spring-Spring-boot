@@ -1,12 +1,12 @@
-package springFrameworkSpringBoot.SpringMVC.controllers;
+package springFrameworkSpringBoot.S7MockMVC.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springFrameworkSpringBoot.SpringMVC.Model.CustomerMVC;
-import springFrameworkSpringBoot.SpringMVC.services.CustomerServiceMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.CustomerMVC;
+import springFrameworkSpringBoot.S7MockMVC.services.CustomerServiceMVC;
 
 import java.util.List;
 import java.util.UUID;

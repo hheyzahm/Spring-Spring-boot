@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.SpringMVC.Model;
+package springFrameworkSpringBoot.S7MockMVC.Model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

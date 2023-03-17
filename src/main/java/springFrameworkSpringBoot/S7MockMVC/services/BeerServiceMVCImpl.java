@@ -1,11 +1,10 @@
-package springFrameworkSpringBoot.S6SpringMVC.services;
+package springFrameworkSpringBoot.S7MockMVC.services;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import springFrameworkSpringBoot.S6SpringMVC.Model.BeerMVC;
-import springFrameworkSpringBoot.S6SpringMVC.Model.BeerStyleMVC;
-
+import springFrameworkSpringBoot.S7MockMVC.Model.BeerMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.BeerStyleMVC;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

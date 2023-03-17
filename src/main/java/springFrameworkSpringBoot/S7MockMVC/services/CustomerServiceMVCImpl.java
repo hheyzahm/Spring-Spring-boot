@@ -1,7 +1,7 @@
-package springFrameworkSpringBoot.SpringMVC.services;
+package springFrameworkSpringBoot.S7MockMVC.services;
 
 import org.springframework.stereotype.Service;
-import springFrameworkSpringBoot.SpringMVC.Model.CustomerMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.CustomerMVC;
 
 import java.time.LocalDateTime;
 import java.util.*;

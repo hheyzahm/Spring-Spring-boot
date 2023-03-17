@@ -1,8 +1,8 @@
-package springFrameworkSpringBoot.SpringMVC.services;
+package springFrameworkSpringBoot.S7MockMVC.services;
 
 
 
-import springFrameworkSpringBoot.SpringMVC.Model.CustomerMVC;
+import springFrameworkSpringBoot.S7MockMVC.Model.CustomerMVC;
 
 import java.util.List;
 import java.util.UUID;

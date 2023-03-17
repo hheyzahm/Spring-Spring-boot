@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.SpringMVC.Model;
+package springFrameworkSpringBoot.S7MockMVC.Model;
 
 /**
  * @Created 17 03 2023 - 4:56 PM

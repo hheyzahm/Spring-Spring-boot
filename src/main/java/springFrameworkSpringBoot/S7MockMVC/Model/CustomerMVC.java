@@ -1,4 +1,4 @@
-package springFrameworkSpringBoot.SpringMVC.Model;
+package springFrameworkSpringBoot.S7MockMVC.Model;
 
 import lombok.Builder;
 import lombok.Data;
